@@ -144,10 +144,18 @@ img {
 
     }
     .site-header{
+        display: flex;
         text-align: center;
         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
-
+    .text-center{
+        width: fit-content;
+    }
+    h2{
+        align-self: center;
+    }
     
  }
 
