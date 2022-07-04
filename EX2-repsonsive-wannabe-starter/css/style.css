@@ -1,6 +1,8 @@
 /*************************************************
     GENERAL STYLES
  *************************************************/
+
+
 *,
 *::before,
 *::after {
@@ -129,11 +131,23 @@ img {
  ************************************************/
 
  /*tablet*/
- @media (max-width: 768px)   {
-    body {
+ @media screen and (max-width: 768px)   {
+    .row{
         display: flex;
         justify-content: center;
+        width: 100%;
     }
+    .container{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .site-header{
+        text-align: center;
+        width: 100%;
+    }
+
     
  }
 
@@ -143,23 +157,33 @@ img {
         display: flex;
         justify-content: center;
         flex-direction: column;
-       
+        flex-grow: 1;
     }
     .container  {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        width: 100%;
     }
     .row    {
         display: flex;
         justify-content: center;
         flex-direction: column;
-
+        align-items: center;
     }
     .card   {
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: center;
+        width: 100%;
+    }
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+    .col{
+        padding:0%;
+        width: 100%;
     }
  }
